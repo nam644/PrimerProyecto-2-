@@ -1,6 +1,6 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  margin:0 auto;
   padding: 2rem;
   text-align: center;
 }
@@ -42,83 +42,88 @@
 
   
 }
+h4 {
+  text-align: left;
+  margin-bottom: 0rem;
+  font-size: 600%; text-shadow: 20px 15px 7px rgb(173, 173, 173);
+  color: #f0e19e; 
+  font-family: "Homer Simpson UI";
+}
 .gallery {
+
   display: flex;
-  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
-  gap: 20px; /* Espacio entre las tarjetas */
-  justify-content: center; /* Centra las tarjetas horizontalmente */
-  align-items: center; /* Alinea verticalmente */
-  background-image: url('segundo.jpg'); /* Ruta de la imagen */
-  background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center; 
+  align-items: center;
+  background-image: url('segundo.jpg');
+  
+  background-position: center; 
+ 
 }
 
 .card-inner {
-  width: 100%; /* Ocupa el 100% del ancho del contenedor padre (.card) */
-  height: 100%; /* Ocupa el 100% de la altura del contenedor padre (.card) */
-  position: relative; /* Permite que los elementos hijos (.card-front y .card-back) se posicionen de forma relativa a este contenedor */
-  transform-style: preserve-3d; /* Activa el modo 3D para las transformaciones de los elementos hijos */
-  transition: transform 0.6s; /* Añade una transición suave de 0.6 segundos cuando se aplica transform */
+  width: 100%;
+  height: 100%;
+  position: relative; 
+  transform-style: preserve-3d; 
+  transition: transform 0.6s; 
 }
 
 .card:hover .card-inner {
-  transform: rotateY(180deg); /* Gira el contenedor .card-inner 180 grados en el eje Y al pasar el cursor por encima del contenedor padre (.card) */
+  transform: rotateY(180deg); 
 }
 
 .card-front, 
 .card-back {
-  position: absolute; /* Ambos elementos se superponen en el mismo lugar dentro de .card-inner */
-  width: 100%; /* Ocupan todo el ancho del contenedor padre (.card-inner) */
-  height: 100%; /* Ocupan toda la altura del contenedor padre (.card-inner) */
-  backface-visibility: hidden; /* Oculta la cara que no está visible durante la rotación */
-  display: flex; /* Activa el modo de diseño flex para alinear los contenidos */
-  justify-content: center; /* Centra horizontalmente los contenidos */
-  align-items: center; /* Centra verticalmente los contenidos */
-  flex-direction: column; /* Coloca los elementos hijos (como texto o imágenes) en una columna */
+  position: absolute;
+  width: 100%; 
+  height: 100%; 
+  backface-visibility: hidden; 
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column; 
 }
 
 .card-front {
-  background: #bab8b8b1; /* Define un fondo gris claro para la cara delantera de la tarjeta */
+  background: #000000b1; 
 }
 
 .card-back {
-  background: #9a9a9ab7; /* Define un fondo rosa claro para la parte trasera de la tarjeta */
-  transform: rotateY(180deg); /* Gira la parte trasera 180 grados en el eje Y para que inicialmente quede "dada vuelta" */
+  background: #464646b7; 
+  transform: rotateY(180deg);
 }
 
 .card {
   perspective: 1000px;
-  width: 400px; /* Aumenta el ancho */
-  height: 400px; /* Mantiene un diseño más cuadrado */
-  margin: 20px; /* Espacio entre las tarjetas */
+  width: 400px; 
+  height: 400px; 
+  margin: 20px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Homer Simpson UI";
+color:rgb(194, 188, 107);
 }
 
 .card-image {
-  width: 90%; /* La imagen ocupará el 90% del ancho */
-  height: 70%; /* Ajusta la altura para mantener proporciones */
-  object-fit: cover; /* Asegura que la imagen no se distorsione */
+  width: 90%; 
+  height: 70%; 
+  object-fit: cover; 
   border-radius: 10px;
 }
 
 .card h3 {
-  font-size: 1.5rem; /* Aumenta el tamaño del título para adaptarse al diseño más amplio */
+  font-size: 1.5rem; 
   margin-top: 1rem;
 }
 
 .card p {
-  font-size: 1rem; /* Mantiene el texto bien proporcionado */
+  font-size: 1.5rem;
   text-align: center;
-  margin: 1rem 0;
+  margin: 5rem ;
   color: aliceblue;
-}
-h4 {
-  text-align: center; /* Centra el texto horizontalmente */
-  margin-bottom: 1rem; /* Espacio entre el título y las tarjetas */
-  font-size: 2.5rem; /* Ajusta el tamaño del texto según tu preferencia */
-  color: #0b0b0b; /* Opcional: Agrega color para darle estilo */
+  font-family: "Homer Simpson UI";
 }
