@@ -1,6 +1,8 @@
+import {useState} from 'react'
 import './App.css';
 
 function Profile({ urlSanrio, nomSan, info }) {
+   const [flipped,setFlipped] = useState(false);
   return (
     <div className="card">
       <div className="card-inner">
