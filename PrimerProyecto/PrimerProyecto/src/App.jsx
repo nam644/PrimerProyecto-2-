@@ -22,7 +22,7 @@ function Profile({ urlSanrio, nomSan, info }) {
 export default function Gallery() {
   return (
     <>
-      <h4 className="title">Gatos</h4>
+      <h4 className="title">Algunas Razas De Gatos</h4>
       <div className="gallery">
 
       <Profile
