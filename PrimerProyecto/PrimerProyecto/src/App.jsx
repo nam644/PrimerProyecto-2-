@@ -38,7 +38,7 @@ export default function Gallery() {
       <Profile
         urlSanrio={"siames.jpg"}
         nomSan={"Gatos Siamés"}
-        info={"Amante de la música y mejor amigaEl siamés es una raza de gato. Dentro de dicha raza se distinguen dos variedades: por un lado el siamés moderno, y por otro el siamés tradicional o Thai. del bosque."}
+        info={"El siamés es una raza de gato. Dentro de dicha raza se distinguen dos variedades: por un lado el siamés moderno, y por otro el siamés tradicional o Thai. del bosque."}
       />
        <Profile
         urlSanrio={"persa.webp"}
